@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32849FCA20B2C9EC007F9EF0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FC920B2C9EC007F9EF0 /* MainPresenter.swift */; };
+		32849FCD20B2CA27007F9EF0 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FCC20B2CA27007F9EF0 /* MainInteractor.swift */; };
+		32849FCF20B2CA9B007F9EF0 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FCE20B2CA9B007F9EF0 /* MainConfigurator.swift */; };
+		32849FD120B2CAAC007F9EF0 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FD020B2CAAC007F9EF0 /* MainRouter.swift */; };
+		32849FD320B2CAC0007F9EF0 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FD220B2CAC0007F9EF0 /* MainProtocols.swift */; };
+		32A97BCB20B2BDE600FEE942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A97BCA20B2BDE600FEE942 /* AppDelegate.swift */; };
+		32A97BD020B2BDE600FEE942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BCE20B2BDE600FEE942 /* Main.storyboard */; };
+		32A97BD220B2BDE900FEE942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BD120B2BDE900FEE942 /* Assets.xcassets */; };
+		32A97BD520B2BDE900FEE942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BD320B2BDE900FEE942 /* LaunchScreen.storyboard */; };
+		32A97BFC20B2BEAB00FEE942 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */; };
+		5ED266BDC2880DF450C7788D /* Pods_VolpisTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E706BB4B1D95730362F6A0 /* Pods_VolpisTestUITests.framework */; };
+		C1BBA8B7BFC1FE14C22B9D5B /* Pods_VolpisTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */; };
+		EBDC2926C1871999D4AB9AE6 /* Pods_VolpisTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32A97BDC20B2BDE900FEE942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32A97BBF20B2BDE600FEE942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32A97BC620B2BDE600FEE942;
+			remoteInfo = VolpisTest;
+		};
+		32A97BE720B2BDE900FEE942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32A97BBF20B2BDE600FEE942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32A97BC620B2BDE600FEE942;
+			remoteInfo = VolpisTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32849FC920B2C9EC007F9EF0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		32849FCC20B2CA27007F9EF0 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		32849FCE20B2CA9B007F9EF0 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		32849FD020B2CAAC007F9EF0 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		32849FD220B2CAC0007F9EF0 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		32A97BC720B2BDE600FEE942 /* VolpisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolpisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A97BCA20B2BDE600FEE942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32A97BCF20B2BDE600FEE942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32A97BD120B2BDE900FEE942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32A97BD420B2BDE900FEE942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32A97BD620B2BDE900FEE942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A97BDB20B2BDE900FEE942 /* VolpisTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolpisTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A97BE620B2BDE900FEE942 /* VolpisTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolpisTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		49FB305128F01371D882264F /* Pods-VolpisTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest.release.xcconfig"; sourceTree = "<group>"; };
+		5D0E2A99D7072EE1DB55683F /* Pods-VolpisTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7D214B94869FB7744B1B2265 /* Pods-VolpisTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestUITests/Pods-VolpisTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		928B34409411EEEA4C2454FE /* Pods-VolpisTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestTests/Pods-VolpisTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B883CD6FBFA487991F7C1E22 /* Pods-VolpisTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestTests/Pods-VolpisTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5E706BB4B1D95730362F6A0 /* Pods_VolpisTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9499DD49E57DD77BA01DB4 /* Pods-VolpisTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestUITests/Pods-VolpisTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32A97BC420B2BDE600FEE942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDC2926C1871999D4AB9AE6 /* Pods_VolpisTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A97BD820B2BDE900FEE942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BBA8B7BFC1FE14C22B9D5B /* Pods_VolpisTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A97BE320B2BDE900FEE942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED266BDC2880DF450C7788D /* Pods_VolpisTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C75B3F3A91DDE595772D5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D0E2A99D7072EE1DB55683F /* Pods-VolpisTest.debug.xcconfig */,
+				49FB305128F01371D882264F /* Pods-VolpisTest.release.xcconfig */,
+				928B34409411EEEA4C2454FE /* Pods-VolpisTestTests.debug.xcconfig */,
+				B883CD6FBFA487991F7C1E22 /* Pods-VolpisTestTests.release.xcconfig */,
+				7D214B94869FB7744B1B2265 /* Pods-VolpisTestUITests.debug.xcconfig */,
+				EC9499DD49E57DD77BA01DB4 /* Pods-VolpisTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		32849FC820B2C9C2007F9EF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */,
+				32849FC920B2C9EC007F9EF0 /* MainPresenter.swift */,
+				32849FCC20B2CA27007F9EF0 /* MainInteractor.swift */,
+				32849FCE20B2CA9B007F9EF0 /* MainConfigurator.swift */,
+				32849FD020B2CAAC007F9EF0 /* MainRouter.swift */,
+				32849FD220B2CAC0007F9EF0 /* MainProtocols.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		32A97BBE20B2BDE600FEE942 = {
+			isa = PBXGroup;
+			children = (
+				32A97BC920B2BDE600FEE942 /* VolpisTest */,
+				32A97BC820B2BDE600FEE942 /* Products */,
+				02C75B3F3A91DDE595772D5C /* Pods */,
+				ADFF8CB7E6A48E80DF058633 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32A97BC820B2BDE600FEE942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BC720B2BDE600FEE942 /* VolpisTest.app */,
+				32A97BDB20B2BDE900FEE942 /* VolpisTestTests.xctest */,
+				32A97BE620B2BDE900FEE942 /* VolpisTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32A97BC920B2BDE600FEE942 /* VolpisTest */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BF820B2BE2500FEE942 /* Main */,
+				32A97BFD20B2BECA00FEE942 /* UI */,
+				32A97BFA20B2BE4C00FEE942 /* Modules */,
+				32A97C0120B2BFFF00FEE942 /* API */,
+				32A97C0020B2BEFD00FEE942 /* Resources */,
+				32A97BFF20B2BEE700FEE942 /* Supporting Files */,
+			);
+			path = VolpisTest;
+			sourceTree = "<group>";
+		};
+		32A97BF820B2BE2500FEE942 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BCA20B2BDE600FEE942 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		32A97BFA20B2BE4C00FEE942 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32849FC820B2C9C2007F9EF0 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		32A97BFD20B2BECA00FEE942 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BFE20B2BED700FEE942 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		32A97BFE20B2BED700FEE942 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BCE20B2BDE600FEE942 /* Main.storyboard */,
+				32A97BD320B2BDE900FEE942 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32A97BFF20B2BEE700FEE942 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BD620B2BDE900FEE942 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32A97C0020B2BEFD00FEE942 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32A97BD120B2BDE900FEE942 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32A97C0120B2BFFF00FEE942 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ADFF8CB7E6A48E80DF058633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */,
+				A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */,
+				D5E706BB4B1D95730362F6A0 /* Pods_VolpisTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32A97BC620B2BDE600FEE942 /* VolpisTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A97BEF20B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTest" */;
+			buildPhases = (
+				DD5C8074BFD4A4D44178927A /* [CP] Check Pods Manifest.lock */,
+				32A97BC320B2BDE600FEE942 /* Sources */,
+				32A97BC420B2BDE600FEE942 /* Frameworks */,
+				32A97BC520B2BDE600FEE942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolpisTest;
+			productName = VolpisTest;
+			productReference = 32A97BC720B2BDE600FEE942 /* VolpisTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32A97BDA20B2BDE900FEE942 /* VolpisTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A97BF220B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTestTests" */;
+			buildPhases = (
+				0A0ABF00EA5C90D35EEB2B99 /* [CP] Check Pods Manifest.lock */,
+				32A97BD720B2BDE900FEE942 /* Sources */,
+				32A97BD820B2BDE900FEE942 /* Frameworks */,
+				32A97BD920B2BDE900FEE942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32A97BDD20B2BDE900FEE942 /* PBXTargetDependency */,
+			);
+			name = VolpisTestTests;
+			productName = VolpisTestTests;
+			productReference = 32A97BDB20B2BDE900FEE942 /* VolpisTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32A97BE520B2BDE900FEE942 /* VolpisTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A97BF520B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTestUITests" */;
+			buildPhases = (
+				D5292271EB448FADA0036A0D /* [CP] Check Pods Manifest.lock */,
+				32A97BE220B2BDE900FEE942 /* Sources */,
+				32A97BE320B2BDE900FEE942 /* Frameworks */,
+				32A97BE420B2BDE900FEE942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32A97BE820B2BDE900FEE942 /* PBXTargetDependency */,
+			);
+			name = VolpisTestUITests;
+			productName = VolpisTestUITests;
+			productReference = 32A97BE620B2BDE900FEE942 /* VolpisTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32A97BBF20B2BDE600FEE942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Dima Paliychuk";
+				TargetAttributes = {
+					32A97BC620B2BDE600FEE942 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					32A97BDA20B2BDE900FEE942 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 32A97BC620B2BDE600FEE942;
+					};
+					32A97BE520B2BDE900FEE942 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 32A97BC620B2BDE600FEE942;
+					};
+				};
+			};
+			buildConfigurationList = 32A97BC220B2BDE600FEE942 /* Build configuration list for PBXProject "VolpisTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32A97BBE20B2BDE600FEE942;
+			productRefGroup = 32A97BC820B2BDE600FEE942 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32A97BC620B2BDE600FEE942 /* VolpisTest */,
+				32A97BDA20B2BDE900FEE942 /* VolpisTestTests */,
+				32A97BE520B2BDE900FEE942 /* VolpisTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32A97BC520B2BDE600FEE942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A97BD520B2BDE900FEE942 /* LaunchScreen.storyboard in Resources */,
+				32A97BD220B2BDE900FEE942 /* Assets.xcassets in Resources */,
+				32A97BD020B2BDE600FEE942 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A97BD920B2BDE900FEE942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A97BE420B2BDE900FEE942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A0ABF00EA5C90D35EEB2B99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VolpisTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5292271EB448FADA0036A0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VolpisTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5C8074BFD4A4D44178927A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VolpisTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A97BC320B2BDE600FEE942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A97BCB20B2BDE600FEE942 /* AppDelegate.swift in Sources */,
+				32849FCA20B2C9EC007F9EF0 /* MainPresenter.swift in Sources */,
+				32849FD320B2CAC0007F9EF0 /* MainProtocols.swift in Sources */,
+				32A97BFC20B2BEAB00FEE942 /* MainViewController.swift in Sources */,
+				32849FCD20B2CA27007F9EF0 /* MainInteractor.swift in Sources */,
+				32849FCF20B2CA9B007F9EF0 /* MainConfigurator.swift in Sources */,
+				32849FD120B2CAAC007F9EF0 /* MainRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A97BD720B2BDE900FEE942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A97BE220B2BDE900FEE942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32A97BDD20B2BDE900FEE942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32A97BC620B2BDE600FEE942 /* VolpisTest */;
+			targetProxy = 32A97BDC20B2BDE900FEE942 /* PBXContainerItemProxy */;
+		};
+		32A97BE820B2BDE900FEE942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32A97BC620B2BDE600FEE942 /* VolpisTest */;
+			targetProxy = 32A97BE720B2BDE900FEE942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32A97BCE20B2BDE600FEE942 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A97BCF20B2BDE600FEE942 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32A97BD320B2BDE900FEE942 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A97BD420B2BDE900FEE942 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32A97BED20B2BDE900FEE942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32A97BEE20B2BDE900FEE942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32A97BF020B2BDE900FEE942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0E2A99D7072EE1DB55683F /* Pods-VolpisTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RCV4Y4RAC;
+				INFOPLIST_FILE = "VolpisTest//Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paliychukdima.VolpisTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32A97BF120B2BDE900FEE942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FB305128F01371D882264F /* Pods-VolpisTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RCV4Y4RAC;
+				INFOPLIST_FILE = "VolpisTest//Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paliychukdima.VolpisTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32A97BF320B2BDE900FEE942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928B34409411EEEA4C2454FE /* Pods-VolpisTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VolpisTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paliychukdima.VolpisTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolpisTest.app/VolpisTest";
+			};
+			name = Debug;
+		};
+		32A97BF420B2BDE900FEE942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B883CD6FBFA487991F7C1E22 /* Pods-VolpisTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VolpisTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paliychukdima.VolpisTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolpisTest.app/VolpisTest";
+			};
+			name = Release;
+		};
+		32A97BF620B2BDE900FEE942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D214B94869FB7744B1B2265 /* Pods-VolpisTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VolpisTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paliychukdima.VolpisTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VolpisTest;
+			};
+			name = Debug;
+		};
+		32A97BF720B2BDE900FEE942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9499DD49E57DD77BA01DB4 /* Pods-VolpisTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VolpisTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paliychukdima.VolpisTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VolpisTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32A97BC220B2BDE600FEE942 /* Build configuration list for PBXProject "VolpisTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A97BED20B2BDE900FEE942 /* Debug */,
+				32A97BEE20B2BDE900FEE942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A97BEF20B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A97BF020B2BDE900FEE942 /* Debug */,
+				32A97BF120B2BDE900FEE942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A97BF220B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A97BF320B2BDE900FEE942 /* Debug */,
+				32A97BF420B2BDE900FEE942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A97BF520B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A97BF620B2BDE900FEE942 /* Debug */,
+				32A97BF720B2BDE900FEE942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32A97BBF20B2BDE600FEE942 /* Project object */;
+}
