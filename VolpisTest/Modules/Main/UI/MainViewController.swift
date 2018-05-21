@@ -38,8 +38,11 @@ class MainViewController: UIViewController {
     private func setupUI() {
         tableView.delegate = self
         tableView.dataSource = self
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: nil)
+        navigationController?.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar.topItem?.title = "objects".localized.uppercased()
-        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white, NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 18)]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationController?.navigationBar.barTintColor = UIColor.customGreen()
         showOnMapButton.backgroundColor = UIColor.customGreen()
@@ -62,10 +65,17 @@ extension MainViewController: MainPresenterToViewProtocol {
     
 }
 
+
+// MARK: tabelView
+
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -17,12 +17,12 @@
 		32849FDD20B2E6DA007F9EF0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FDC20B2E6DA007F9EF0 /* Colors.swift */; };
 		32849FDF20B2EFE0007F9EF0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FDE20B2EFE0007F9EF0 /* MainTableViewCell.swift */; };
 		32849FE120B2F99C007F9EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32849FE020B2F99C007F9EF0 /* Assets.xcassets */; };
+		32849FE720B30628007F9EF0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FE620B30628007F9EF0 /* Place.swift */; };
+		32849FE920B3092E007F9EF0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FE820B3092E007F9EF0 /* API.swift */; };
 		32A97BCB20B2BDE600FEE942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A97BCA20B2BDE600FEE942 /* AppDelegate.swift */; };
 		32A97BD020B2BDE600FEE942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BCE20B2BDE600FEE942 /* Main.storyboard */; };
 		32A97BD520B2BDE900FEE942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BD320B2BDE900FEE942 /* LaunchScreen.storyboard */; };
 		32A97BFC20B2BEAB00FEE942 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */; };
-		5ED266BDC2880DF450C7788D /* Pods_VolpisTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E706BB4B1D95730362F6A0 /* Pods_VolpisTestUITests.framework */; };
-		C1BBA8B7BFC1FE14C22B9D5B /* Pods_VolpisTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */; };
 		EBDC2926C1871999D4AB9AE6 /* Pods_VolpisTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,8 @@
 		32849FDC20B2E6DA007F9EF0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		32849FDE20B2EFE0007F9EF0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		32849FE020B2F99C007F9EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32849FE620B30628007F9EF0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		32849FE820B3092E007F9EF0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		32A97BC720B2BDE600FEE942 /* VolpisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolpisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A97BCA20B2BDE600FEE942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A97BCF20B2BDE600FEE942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,12 +67,8 @@
 		32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		49FB305128F01371D882264F /* Pods-VolpisTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest.release.xcconfig"; sourceTree = "<group>"; };
 		5D0E2A99D7072EE1DB55683F /* Pods-VolpisTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest.debug.xcconfig"; sourceTree = "<group>"; };
-		7D214B94869FB7744B1B2265 /* Pods-VolpisTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestUITests/Pods-VolpisTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		928B34409411EEEA4C2454FE /* Pods-VolpisTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestTests/Pods-VolpisTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B883CD6FBFA487991F7C1E22 /* Pods-VolpisTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestTests/Pods-VolpisTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5E706BB4B1D95730362F6A0 /* Pods_VolpisTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC9499DD49E57DD77BA01DB4 /* Pods-VolpisTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestUITests/Pods-VolpisTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BBA8B7BFC1FE14C22B9D5B /* Pods_VolpisTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED266BDC2880DF450C7788D /* Pods_VolpisTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,10 +102,6 @@
 			children = (
 				5D0E2A99D7072EE1DB55683F /* Pods-VolpisTest.debug.xcconfig */,
 				49FB305128F01371D882264F /* Pods-VolpisTest.release.xcconfig */,
-				928B34409411EEEA4C2454FE /* Pods-VolpisTestTests.debug.xcconfig */,
-				B883CD6FBFA487991F7C1E22 /* Pods-VolpisTestTests.release.xcconfig */,
-				7D214B94869FB7744B1B2265 /* Pods-VolpisTestUITests.debug.xcconfig */,
-				EC9499DD49E57DD77BA01DB4 /* Pods-VolpisTestUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -143,6 +135,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		32849FE220B305EE007F9EF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32849FE620B30628007F9EF0 /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		32A97BBE20B2BDE600FEE942 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +169,7 @@
 				32A97BF820B2BE2500FEE942 /* Main */,
 				32849FDB20B2D783007F9EF0 /* UI */,
 				32A97BFA20B2BE4C00FEE942 /* Modules */,
+				32849FE220B305EE007F9EF0 /* Models */,
 				32A97C0120B2BFFF00FEE942 /* API */,
 				32A97C0020B2BEFD00FEE942 /* Resources */,
 				32849FD820B2D71B007F9EF0 /* Extensions & Utils */,
@@ -224,6 +225,7 @@
 		32A97C0120B2BFFF00FEE942 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				32849FE820B3092E007F9EF0 /* API.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -249,6 +251,7 @@
 				32A97BC320B2BDE600FEE942 /* Sources */,
 				32A97BC420B2BDE600FEE942 /* Frameworks */,
 				32A97BC520B2BDE600FEE942 /* Resources */,
+				811D21D67F6365987C77E917 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,7 +266,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32A97BF220B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTestTests" */;
 			buildPhases = (
-				0A0ABF00EA5C90D35EEB2B99 /* [CP] Check Pods Manifest.lock */,
 				32A97BD720B2BDE900FEE942 /* Sources */,
 				32A97BD820B2BDE900FEE942 /* Frameworks */,
 				32A97BD920B2BDE900FEE942 /* Resources */,
@@ -282,7 +284,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32A97BF520B2BDE900FEE942 /* Build configuration list for PBXNativeTarget "VolpisTestUITests" */;
 			buildPhases = (
-				D5292271EB448FADA0036A0D /* [CP] Check Pods Manifest.lock */,
 				32A97BE220B2BDE900FEE942 /* Sources */,
 				32A97BE320B2BDE900FEE942 /* Frameworks */,
 				32A97BE420B2BDE900FEE942 /* Resources */,
@@ -369,40 +370,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A0ABF00EA5C90D35EEB2B99 /* [CP] Check Pods Manifest.lock */ = {
+		811D21D67F6365987C77E917 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VolpisTestTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5292271EB448FADA0036A0D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VolpisTestUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD5C8074BFD4A4D44178927A /* [CP] Check Pods Manifest.lock */ = {
@@ -439,6 +426,8 @@
 				32A97BFC20B2BEAB00FEE942 /* MainViewController.swift in Sources */,
 				32849FCD20B2CA27007F9EF0 /* MainInteractor.swift in Sources */,
 				32849FCF20B2CA9B007F9EF0 /* MainAssembly.swift in Sources */,
+				32849FE720B30628007F9EF0 /* Place.swift in Sources */,
+				32849FE920B3092E007F9EF0 /* API.swift in Sources */,
 				32849FD120B2CAAC007F9EF0 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,7 +635,6 @@
 		};
 		32A97BF320B2BDE900FEE942 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 928B34409411EEEA4C2454FE /* Pods-VolpisTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,7 +655,6 @@
 		};
 		32A97BF420B2BDE900FEE942 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B883CD6FBFA487991F7C1E22 /* Pods-VolpisTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -688,7 +675,6 @@
 		};
 		32A97BF620B2BDE900FEE942 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D214B94869FB7744B1B2265 /* Pods-VolpisTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,7 +694,6 @@
 		};
 		32A97BF720B2BDE900FEE942 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC9499DD49E57DD77BA01DB4 /* Pods-VolpisTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

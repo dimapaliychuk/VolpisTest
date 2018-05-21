@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,7 +39,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Q8N-V9-IWd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="showOnMapButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qT4-pB-dAr"/>
@@ -57,14 +56,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peO-Y6-1q9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="107.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="120" id="fJP-b2-vZR"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8sE-jq-3Fs" userLabel="Name Label">
-                                                    <rect key="frame" x="130" y="0.0" width="42.5" height="25"/>
+                                                    <rect key="frame" x="150" y="0.0" width="42.5" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="lCb-v8-DES"/>
                                                     </constraints>
@@ -73,13 +66,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlQ-by-5ED" userLabel="Description Label">
-                                                    <rect key="frame" x="130" y="30" width="200" height="49"/>
+                                                    <rect key="frame" x="150" y="30" width="33" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a4U-hF-NBz" userLabel="Distance Label">
-                                                    <rect key="frame" x="130" y="84" width="200" height="25"/>
+                                                    <rect key="frame" x="150" y="74" width="31" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="ebc-yh-X7u"/>
                                                     </constraints>
@@ -87,7 +80,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-LX-3YW">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselect" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-LX-3YW">
                                                     <rect key="frame" x="335" y="0.0" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="NXa-ev-Rpe"/>
@@ -95,29 +88,35 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxy-fJ-gR6" userLabel="Separator View">
-                                                    <rect key="frame" x="0.0" y="117.5" width="355" height="2"/>
-                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <rect key="frame" x="0.0" y="107.5" width="355" height="2"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="IBS-Yv-2a3"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselect" translatesAutoresizingMaskIntoConstraints="NO" id="nzZ-Oy-Gtu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="140" id="Axp-bZ-HVQ"/>
+                                                        <constraint firstAttribute="height" constant="100" id="cfu-SX-JH2"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="bxy-fJ-gR6" firstAttribute="top" secondItem="peO-Y6-1q9" secondAttribute="bottom" constant="10" id="74E-aM-3HG"/>
-                                                <constraint firstItem="HlQ-by-5ED" firstAttribute="leading" secondItem="peO-Y6-1q9" secondAttribute="trailing" constant="10" id="7Vw-fq-72e"/>
-                                                <constraint firstItem="cAN-LX-3YW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8sE-jq-3Fs" secondAttribute="trailing" constant="10" id="9JB-Ig-vmd"/>
-                                                <constraint firstItem="8sE-jq-3Fs" firstAttribute="leading" secondItem="peO-Y6-1q9" secondAttribute="trailing" constant="10" id="DLD-jS-jGO"/>
+                                                <constraint firstItem="nzZ-Oy-Gtu" firstAttribute="leading" secondItem="WLH-Sp-ijN" secondAttribute="leading" id="9an-g4-DLU"/>
+                                                <constraint firstItem="a4U-hF-NBz" firstAttribute="leading" secondItem="nzZ-Oy-Gtu" secondAttribute="trailing" constant="10" id="J7X-F1-z4z"/>
                                                 <constraint firstItem="HlQ-by-5ED" firstAttribute="top" secondItem="8sE-jq-3Fs" secondAttribute="bottom" constant="5" id="KZL-Fl-cZJ"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="a4U-hF-NBz" secondAttribute="trailing" constant="10" id="KzU-jG-MC4"/>
-                                                <constraint firstItem="peO-Y6-1q9" firstAttribute="top" secondItem="WLH-Sp-ijN" secondAttribute="top" id="Mv4-g2-N9X"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8sE-jq-3Fs" secondAttribute="trailing" constant="10" id="LTe-SU-T4S"/>
                                                 <constraint firstAttribute="trailing" secondItem="bxy-fJ-gR6" secondAttribute="trailing" id="Nkm-Pv-Xvc"/>
-                                                <constraint firstAttribute="bottom" secondItem="bxy-fJ-gR6" secondAttribute="bottom" id="R8o-bw-Klg"/>
+                                                <constraint firstAttribute="bottom" secondItem="bxy-fJ-gR6" secondAttribute="bottom" constant="10" id="R8o-bw-Klg"/>
                                                 <constraint firstItem="cAN-LX-3YW" firstAttribute="top" secondItem="WLH-Sp-ijN" secondAttribute="top" id="SHd-eL-tk1"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HlQ-by-5ED" secondAttribute="trailing" constant="10" id="UhH-Ow-rkJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="cAN-LX-3YW" secondAttribute="trailing" id="a5M-cz-iVU"/>
                                                 <constraint firstItem="bxy-fJ-gR6" firstAttribute="top" secondItem="a4U-hF-NBz" secondAttribute="bottom" constant="8.5" id="apG-BT-l1X"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="HlQ-by-5ED" secondAttribute="trailing" constant="10" id="bpB-nm-guw"/>
-                                                <constraint firstItem="a4U-hF-NBz" firstAttribute="leading" secondItem="peO-Y6-1q9" secondAttribute="trailing" constant="10" id="dUv-gY-Ruz"/>
-                                                <constraint firstItem="peO-Y6-1q9" firstAttribute="leading" secondItem="WLH-Sp-ijN" secondAttribute="leading" id="mnl-XR-7CK"/>
+                                                <constraint firstItem="8sE-jq-3Fs" firstAttribute="leading" secondItem="nzZ-Oy-Gtu" secondAttribute="trailing" constant="10" id="bpH-Hc-P8M"/>
+                                                <constraint firstItem="nzZ-Oy-Gtu" firstAttribute="top" secondItem="WLH-Sp-ijN" secondAttribute="top" id="h0M-hJ-pfU"/>
+                                                <constraint firstItem="HlQ-by-5ED" firstAttribute="leading" secondItem="nzZ-Oy-Gtu" secondAttribute="trailing" constant="10" id="heM-9w-Qej"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a4U-hF-NBz" secondAttribute="trailing" constant="10" id="mM6-Zj-Y6s"/>
                                                 <constraint firstItem="a4U-hF-NBz" firstAttribute="top" secondItem="HlQ-by-5ED" secondAttribute="bottom" constant="5" id="nDM-4A-tmh"/>
                                                 <constraint firstItem="8sE-jq-3Fs" firstAttribute="top" secondItem="WLH-Sp-ijN" secondAttribute="top" id="nai-9a-SEc"/>
                                                 <constraint firstItem="bxy-fJ-gR6" firstAttribute="leading" secondItem="WLH-Sp-ijN" secondAttribute="leading" id="uwW-4M-r02"/>
@@ -127,9 +126,8 @@
                                             <outlet property="checkImageView" destination="cAN-LX-3YW" id="LbZ-OE-22h"/>
                                             <outlet property="descriptionLabel" destination="HlQ-by-5ED" id="f0X-bF-3Dc"/>
                                             <outlet property="distanceLabel" destination="a4U-hF-NBz" id="Kwn-dt-vWn"/>
-                                            <outlet property="imageView" destination="peO-Y6-1q9" id="ejw-hm-h4L"/>
                                             <outlet property="nameLabel" destination="8sE-jq-3Fs" id="WTM-kW-KzO"/>
-                                            <outlet property="placeImageView" destination="peO-Y6-1q9" id="qIx-Sq-cft"/>
+                                            <outlet property="placeImageView" destination="nzZ-Oy-Gtu" id="oDS-2f-RNJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -158,4 +156,7 @@
             <point key="canvasLocation" x="-831.20000000000005" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="unselect" width="10" height="12"/>
+    </resources>
 </document>
