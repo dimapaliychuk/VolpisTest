@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import UIKit
+
+
+protocol MainViewToPresenterProtocol: class {
+}
+
+protocol MainPresentorToInterectorProtocol: class {
+}
+
+protocol MainInterectorToPresenterProtocol: class {
+}
+
+protocol MainPresenterToViewProtocol: class {
+    
+}
+
+protocol MainPresenterToRouterProtocol: class {
+}
+

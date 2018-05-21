@@ -6,4 +6,11 @@
 //  Copyright © 2018 Dima Paliychuk. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MainInteractor: MainPresentorToInterectorProtocol {
+    
+    var presenter: MainInterectorToPresenterProtocol?
+    
+    
+}

@@ -6,4 +6,10 @@
 //  Copyright © 2018 Dima Paliychuk. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MainRouter: MainPresenterToRouterProtocol {
+    
+    weak var mainViewController: MainViewController!
+    
+}
