@@ -6,5 +6,7 @@ target 'VolpisTest' do
   use_frameworks!
 
   pod 'Moya'
+  pod 'SDWebImage'
+  pod 'GooglePlaces'
 
 end

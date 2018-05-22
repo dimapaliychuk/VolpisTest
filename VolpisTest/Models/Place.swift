@@ -8,6 +8,7 @@
 
 import Foundation
 import Moya
+import CoreLocation
 
 class PlaceResponse: Codable {
     
@@ -22,12 +23,14 @@ class PlaceResponse: Codable {
 
 class Place: Codable {
     
-    var id: Int?
+    var id: String?
     var title: String?
     var description: String?
     var imageUrl: String?
     var latitude: Double?
     var longitude: Double?
+    var distanse: CLLocationDistance?
+    var isSelected = false
     
     
     // compiler generated

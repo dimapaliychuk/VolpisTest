@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
+import CoreLocation
 
 class MainViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var showOnMapButton: UIButton!
+    fileprivate var places: [Place]?
     
     
     // MARK: dependencies
@@ -54,7 +57,16 @@ class MainViewController: UIViewController {
     // MARK: action
     
     @IBAction func showOnMapButtonAction(_ sender: Any) {
-        
+        guard let places = places else {
+            return
+        }
+        var selectedPlaces = [Place]()
+        for item in places {
+            if item.isSelected {
+                selectedPlaces.append(item)
+            }
+        }
+        presenter.showOnMap(with: selectedPlaces)
     }
     
 }
@@ -62,7 +74,10 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainPresenterToViewProtocol {
     
-    
+    func showPlaces(places: [Place]) {
+        self.places = places
+        tableView.reloadData()
+    }
 }
 
 
@@ -71,17 +86,42 @@ extension MainViewController: MainPresenterToViewProtocol {
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return places?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 125
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTabelViewCell", for: indexPath) as! MainTableViewCell
+        guard let places = places else {
+            return cell
+        }
+        
+        if let url = places[indexPath.row].imageUrl {
+            cell.placeImageView.sd_setImage(with: URL(string: url)) { (image, error, cacheType, url) in
+                cell.placeImageView.image = image
+            }
+        }
+        cell.checkImageView.image = places[indexPath.row].isSelected ? #imageLiteral(resourceName: "select") : #imageLiteral(resourceName: "unselect")
+        cell.nameLabel.text = places[indexPath.row].title
+        cell.descriptionLabel.text = places[indexPath.row].description
+        if let distanse = places[indexPath.row].distanse {
+            cell.distanceLabel.text = String(format: "%.1f " + "km".localized, distanse.inKilometers())
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let place = places?[indexPath.row] else {
+            return
+        }
+        place.isSelected = !place.isSelected
+        let cell = tableView.cellForRow(at: indexPath) as! MainTableViewCell
+        cell.checkImageView.image = place.isSelected ? #imageLiteral(resourceName: "select") : #imageLiteral(resourceName: "unselect")
     }
     
 }

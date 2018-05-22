@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32512F7020B34CCB009E71BA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32512F6F20B34CCB009E71BA /* MapKit.framework */; };
+		32512F7220B356B2009E71BA /* CLLocationDistance+km.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32512F7120B356B2009E71BA /* CLLocationDistance+km.swift */; };
 		32849FCA20B2C9EC007F9EF0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FC920B2C9EC007F9EF0 /* MainPresenter.swift */; };
 		32849FCD20B2CA27007F9EF0 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FCC20B2CA27007F9EF0 /* MainInteractor.swift */; };
 		32849FCF20B2CA9B007F9EF0 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32849FCE20B2CA9B007F9EF0 /* MainAssembly.swift */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32512F6F20B34CCB009E71BA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		32512F7120B356B2009E71BA /* CLLocationDistance+km.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationDistance+km.swift"; sourceTree = "<group>"; };
 		32849FC920B2C9EC007F9EF0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		32849FCC20B2CA27007F9EF0 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		32849FCE20B2CA9B007F9EF0 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32512F7020B34CCB009E71BA /* MapKit.framework in Frameworks */,
 				EBDC2926C1871999D4AB9AE6 /* Pods_VolpisTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +111,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		32512F6920B312CD009E71BA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		32849FC820B2C9C2007F9EF0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				32849FD920B2D735007F9EF0 /* String+localized.swift */,
+				32512F7120B356B2009E71BA /* CLLocationDistance+km.swift */,
 			);
 			path = "Extensions & Utils";
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 		32A97BFA20B2BE4C00FEE942 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				32512F6920B312CD009E71BA /* Map */,
 				32849FC820B2C9C2007F9EF0 /* Main */,
 			);
 			path = Modules;
@@ -198,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */,
-				32A97BCE20B2BDE600FEE942 /* Main.storyboard */,
 				32849FDE20B2EFE0007F9EF0 /* MainTableViewCell.swift */,
+				32A97BCE20B2BDE600FEE942 /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 		ADFF8CB7E6A48E80DF058633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32512F6F20B34CCB009E71BA /* MapKit.framework */,
 				1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */,
 				A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */,
 				D5E706BB4B1D95730362F6A0 /* Pods_VolpisTestUITests.framework */,
@@ -252,6 +267,7 @@
 				32A97BC420B2BDE600FEE942 /* Frameworks */,
 				32A97BC520B2BDE600FEE942 /* Resources */,
 				811D21D67F6365987C77E917 /* [CP] Embed Pods Frameworks */,
+				7084FC9A92312479A81AB149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +326,11 @@
 				TargetAttributes = {
 					32A97BC620B2BDE600FEE942 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					32A97BDA20B2BDE900FEE942 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -370,6 +391,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7084FC9A92312479A81AB149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		811D21D67F6365987C77E917 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,12 +419,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,6 +460,7 @@
 			files = (
 				32A97BCB20B2BDE600FEE942 /* AppDelegate.swift in Sources */,
 				32849FDD20B2E6DA007F9EF0 /* Colors.swift in Sources */,
+				32512F7220B356B2009E71BA /* CLLocationDistance+km.swift in Sources */,
 				32849FCA20B2C9EC007F9EF0 /* MainPresenter.swift in Sources */,
 				32849FDA20B2D735007F9EF0 /* String+localized.swift in Sources */,
 				32849FDF20B2EFE0007F9EF0 /* MainTableViewCell.swift in Sources */,
@@ -603,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RCV4Y4RAC;
 				INFOPLIST_FILE = "VolpisTest//Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RCV4Y4RAC;
 				INFOPLIST_FILE = "VolpisTest//Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

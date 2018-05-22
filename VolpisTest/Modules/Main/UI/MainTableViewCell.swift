@@ -20,6 +20,7 @@ class MainTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        distanceLabel.textColor = UIColor.customGreen()
     }
-    
 }
+

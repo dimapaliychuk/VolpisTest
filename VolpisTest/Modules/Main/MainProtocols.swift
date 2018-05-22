@@ -11,18 +11,22 @@ import UIKit
 
 
 protocol MainViewToPresenterProtocol: class {
+    func showOnMap(with places: [Place])
 }
 
 protocol MainPresentorToInterectorProtocol: class {
+    func showOnMap(with places: [Place])
 }
 
 protocol MainInterectorToPresenterProtocol: class {
+    func showPlaces(places: [Place])
 }
 
 protocol MainPresenterToViewProtocol: class {
-    
+    func showPlaces(places: [Place])
 }
 
 protocol MainPresenterToRouterProtocol: class {
+    func presentMapViewContriller() 
 }
 

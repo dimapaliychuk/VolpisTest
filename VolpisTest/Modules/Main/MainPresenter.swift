@@ -9,14 +9,20 @@
 import Foundation
 
 class MainPresenter: MainViewToPresenterProtocol {
-    
+
     var view: MainPresenterToViewProtocol?
     var interactor: MainPresentorToInterectorProtocol?
     var router: MainPresenterToRouterProtocol?
     
-    
+    func showOnMap(with places: [Place]) {
+        
+    }
 }
 
 extension MainPresenter: MainInterectorToPresenterProtocol {
-   
+    
+    func showPlaces(places: [Place]) {
+        view?.showPlaces(places: places)
+    }
+
 }
