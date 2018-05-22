@@ -8,12 +8,19 @@
 
 import UIKit
 
+
 class MainRouter: MainPresenterToRouterProtocol {
     
     weak var mainViewController: MainViewController!
     
-    func presentMapViewContriller() {
+    func presentMapViewContriller(with places: [Place]) {
+        let mapVC = UIStoryboard(
+            name: "Map",
+            bundle: nil
+        ).instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+        mapVC.places = places
         
+        mainViewController.navigationController?.pushViewController(mapVC, animated: true)
     }
     
 }

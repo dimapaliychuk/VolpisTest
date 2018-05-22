@@ -27,6 +27,6 @@ protocol MainPresenterToViewProtocol: class {
 }
 
 protocol MainPresenterToRouterProtocol: class {
-    func presentMapViewContriller() 
+    func presentMapViewContriller(with places: [Place]) 
 }
 

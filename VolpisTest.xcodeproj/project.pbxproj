@@ -25,6 +25,12 @@
 		32A97BD020B2BDE600FEE942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BCE20B2BDE600FEE942 /* Main.storyboard */; };
 		32A97BD520B2BDE900FEE942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A97BD320B2BDE900FEE942 /* LaunchScreen.storyboard */; };
 		32A97BFC20B2BEAB00FEE942 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */; };
+		32FEC88020B40B9500DB5856 /* MapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEC87F20B40B9500DB5856 /* MapAssembly.swift */; };
+		32FEC88220B40BA500DB5856 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEC88120B40BA500DB5856 /* MapPresenter.swift */; };
+		32FEC88820B40BEF00DB5856 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEC88720B40BEF00DB5856 /* MapRouter.swift */; };
+		32FEC88A20B40C0200DB5856 /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEC88920B40C0100DB5856 /* MapProtocols.swift */; };
+		32FEC88F20B40C2E00DB5856 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FEC88E20B40C2E00DB5856 /* Map.storyboard */; };
+		32FEC89120B40E3500DB5856 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEC89020B40E3500DB5856 /* MapViewController.swift */; };
 		EBDC2926C1871999D4AB9AE6 /* Pods_VolpisTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAA2232A03DAC4FF249B5FA /* Pods_VolpisTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +75,12 @@
 		32A97BDB20B2BDE900FEE942 /* VolpisTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolpisTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A97BE620B2BDE900FEE942 /* VolpisTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolpisTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A97BFB20B2BEAB00FEE942 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		32FEC87F20B40B9500DB5856 /* MapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembly.swift; sourceTree = "<group>"; };
+		32FEC88120B40BA500DB5856 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		32FEC88720B40BEF00DB5856 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		32FEC88920B40C0100DB5856 /* MapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = "<group>"; };
+		32FEC88E20B40C2E00DB5856 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		32FEC89020B40E3500DB5856 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		49FB305128F01371D882264F /* Pods-VolpisTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest.release.xcconfig"; sourceTree = "<group>"; };
 		5D0E2A99D7072EE1DB55683F /* Pods-VolpisTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTest/Pods-VolpisTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A9C4CFEFAA1277DF22B1FC06 /* Pods_VolpisTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +126,11 @@
 		32512F6920B312CD009E71BA /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				32FEC87F20B40B9500DB5856 /* MapAssembly.swift */,
+				32FEC88120B40BA500DB5856 /* MapPresenter.swift */,
+				32FEC88720B40BEF00DB5856 /* MapRouter.swift */,
+				32FEC88920B40C0100DB5856 /* MapProtocols.swift */,
+				32FEC88B20B40C1000DB5856 /* UI */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -244,6 +261,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		32FEC88B20B40C1000DB5856 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				32FEC89020B40E3500DB5856 /* MapViewController.swift */,
+				32FEC88E20B40C2E00DB5856 /* Map.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		ADFF8CB7E6A48E80DF058633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +395,7 @@
 			files = (
 				32849FD720B2D704007F9EF0 /* Localizable.strings in Resources */,
 				32A97BD520B2BDE900FEE942 /* LaunchScreen.storyboard in Resources */,
+				32FEC88F20B40C2E00DB5856 /* Map.storyboard in Resources */,
 				32849FE120B2F99C007F9EF0 /* Assets.xcassets in Resources */,
 				32A97BD020B2BDE600FEE942 /* Main.storyboard in Resources */,
 			);
@@ -460,14 +487,19 @@
 			files = (
 				32A97BCB20B2BDE600FEE942 /* AppDelegate.swift in Sources */,
 				32849FDD20B2E6DA007F9EF0 /* Colors.swift in Sources */,
+				32FEC88220B40BA500DB5856 /* MapPresenter.swift in Sources */,
+				32FEC88020B40B9500DB5856 /* MapAssembly.swift in Sources */,
+				32FEC88820B40BEF00DB5856 /* MapRouter.swift in Sources */,
 				32512F7220B356B2009E71BA /* CLLocationDistance+km.swift in Sources */,
 				32849FCA20B2C9EC007F9EF0 /* MainPresenter.swift in Sources */,
+				32FEC89120B40E3500DB5856 /* MapViewController.swift in Sources */,
 				32849FDA20B2D735007F9EF0 /* String+localized.swift in Sources */,
 				32849FDF20B2EFE0007F9EF0 /* MainTableViewCell.swift in Sources */,
 				32849FD320B2CAC0007F9EF0 /* MainProtocols.swift in Sources */,
 				32A97BFC20B2BEAB00FEE942 /* MainViewController.swift in Sources */,
 				32849FCD20B2CA27007F9EF0 /* MainInteractor.swift in Sources */,
 				32849FCF20B2CA9B007F9EF0 /* MainAssembly.swift in Sources */,
+				32FEC88A20B40C0200DB5856 /* MapProtocols.swift in Sources */,
 				32849FE720B30628007F9EF0 /* Place.swift in Sources */,
 				32849FE920B3092E007F9EF0 /* API.swift in Sources */,
 				32849FD120B2CAAC007F9EF0 /* MainRouter.swift in Sources */,

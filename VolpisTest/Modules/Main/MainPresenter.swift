@@ -15,7 +15,7 @@ class MainPresenter: MainViewToPresenterProtocol {
     var router: MainPresenterToRouterProtocol?
     
     func showOnMap(with places: [Place]) {
-        
+        router?.presentMapViewContriller(with: places)
     }
 }
 
